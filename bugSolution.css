@@ -1,0 +1,23 @@
+/* bugSolution.css */
+
+/* Correcting unit compatibility issues */
+.element {
+  width: calc(100% - 20px);
+  /* Avoid mixing px and em */
+}
+
+/* Correcting operator precedence issues */
+.element2 {
+  width: calc((100px + 50px) / 2);
+  /* Use parentheses to ensure correct order of operations */
+}
+
+/* Handling potential browser inconsistencies (although unlikely with modern browsers) */
+.element3 {
+  /* Use fallbacks or more specific selector if needed */
+  width: calc(50%);
+  /* Fallback */
+  width: 50%;
+}
+
+/* Add more examples as needed */
